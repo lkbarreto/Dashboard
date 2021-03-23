@@ -1,6 +1,6 @@
 <template>
   <div class="averages">
-    <v-row justify="center" class="rowAve" align="center">
+    <v-row  justify="center" class="rowAve" align="center">
       <v-col cols="5">
         <div class="subtitle">Total number of orders this month</div>
         <div class="number">2,366</div>
@@ -9,7 +9,7 @@
         <div class="subtitle">Average number of shipments/month</div>
         <div class="flexRow">
           <div class="number">364</div>
-          <v-btn class="text-capitalize" outlined small text tile>View orders</v-btn>
+          <v-btn class="text-capitalize" outlined  small text tile>View orders</v-btn>
         </div>
       </v-col>
     </v-row>
@@ -24,14 +24,14 @@ export default {
 
 <style>
 .number {
-  font-size: 1.3em;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 500;
   text-align: left;
 }
 .subtitle {
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-weight: 500;
-  margin-bottom: 1vh;
+  margin-bottom: 1.2vh;
   text-align: left;
 }
 .rowAve {
@@ -41,6 +41,7 @@ export default {
 
 .flexRow {
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   display: flex;
 }
