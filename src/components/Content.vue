@@ -44,9 +44,8 @@
         tile
         outlined
         width="97%"
-        height="100px"
       >
-        4
+        <Graphic />
       </v-card>
     </v-row>
   </div>
@@ -56,12 +55,14 @@
 import Averages from "./AverageNumbers";
 import Inventory from "./Inventory";
 import Trending from "./Trending";
+import Graphic from './Graphic'
 export default {
   name: "content",
   components: {
     Averages,
     Inventory,
     Trending,
+    Graphic
   },
 };
 </script>

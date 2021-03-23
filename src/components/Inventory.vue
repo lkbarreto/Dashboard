@@ -49,7 +49,7 @@ export default {
 }
 
 .flexRow {
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   display: flex;
@@ -57,7 +57,7 @@ export default {
 
 .flexCol {
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100% !important;
 }
