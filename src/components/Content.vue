@@ -1,8 +1,13 @@
 <template>
   <div class="Content">
-   <h1 class="title">Welcome to Gemnote, Ashley!</h1>
-   <v-row>
-       
+   <h1 class="title mb-10">Welcome to Gemnote, Ashley!</h1>
+   <v-row align="center" justify="center">
+       <v-col class="red" cols="12" sm="6">
+
+       </v-col>
+        <v-col class="blue" cols="12" sm="6">
+
+       </v-col>
    </v-row>
   </div>
 </template>
