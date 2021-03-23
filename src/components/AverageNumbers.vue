@@ -29,7 +29,7 @@ export default {
   text-align: left;
 }
 .subtitle {
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 500;
   margin-bottom: 1.2vh;
   text-align: left;

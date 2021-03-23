@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: "averages",
+  name: "inventory",
 };
 </script>
 
@@ -39,7 +39,7 @@ export default {
   text-align: left;
 }
 .subtitle {
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 500;
   text-align: left;
 }
