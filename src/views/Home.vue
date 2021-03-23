@@ -26,4 +26,13 @@ export default {
   padding-left: 8vw;
   padding-right: 8vw;
 }
+
+@media only screen and (max-width: 768px) {
+  .content {
+  padding-top: 2vh;
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
+}
+
 </style>

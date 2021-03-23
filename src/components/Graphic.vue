@@ -1,12 +1,15 @@
 <script>
 import { Bar, mixins } from "vue-chartjs";
 Chart.defaults.global.legend.display = false;
+Chart.defaults.scale.gridLines.display = false;
 export default {
   extends: Bar,
-  mixins: [mixins.reactiveProp],
+  
+  
   mounted() {
     this.renderChart(
       {
+        
         labels: [
           "Jan",
           "Feb",
@@ -23,9 +26,9 @@ export default {
         ],
         datasets: [
           {
-            barThickness: 16,
-            backgroundColor: "grey",
-            data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11],
+            barThickness: 15,
+            backgroundColor: "#E3E4E5",
+            data: [40, 20, 22, 39, 65, 40, 39, 75, 45, 25, 12, 35],
           },
         ],
       },

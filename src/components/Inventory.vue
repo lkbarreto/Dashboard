@@ -12,11 +12,17 @@
         </v-progress-circular>
       </v-col>
       <v-col justify="center" align="center" cols="8">
-        <div class="flexCol">
+        <div class="flexCol ml-3">
           <div class="subtitle">Current Inventory</div>
           <div class="flexRow">
             <div class="number">400</div>
-            <v-btn class="text-capitalize" outlined small text tile
+            <v-btn
+              class="text-capitalize"
+              :small="size != 'sm' && size != 'xs'"
+              :x-small="size == 'sm' || size == 'xs'"
+              outlined
+              text
+              tile
               >Manage Inventory</v-btn
             >
           </div>
@@ -29,10 +35,19 @@
 <script>
 export default {
   name: "inventory",
+  computed: {
+    size() {
+      return this.$vuetify.breakpoint.name;
+    },
+  },
 };
 </script>
 
 <style>
+.inventory {
+  display: flex;
+  height: 100%;
+}
 .number {
   font-size: 1.5em;
   font-weight: 500;

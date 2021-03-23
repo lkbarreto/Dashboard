@@ -2,30 +2,49 @@
   <div class="Trending">
     <div class="subtitle">Trending gifts in your store</div>
     <v-row no-gutters justify="center" class="rowInventory" align="center">
-      <v-col justify="center" align="center" cols="10">
-        <v-row>
+      <v-col justify="center" align="center" cols="8">
+        <v-row v-if="!size == 'sm' || !size == 'xs'">
           <v-col v-for="item in data" :key="item.id" cols="3">
             <v-item v-slot="{ toggle }">
-              <v-img
-                contain
-              
-                height="200px"
-                :src="item.source"
-                @click="toggle"
-              >
+              <v-img contain height="200px" :src="item.source" @click="toggle">
               </v-img>
             </v-item>
           </v-col>
         </v-row>
 
-        <!--  <v-slide-group v-model="model" class="pa-0" center-active show-arrows>
-          <v-slide-item class="ma-0" v-for="item in data" :key="item.id"  v-slot="{  toggle }">
-            <v-img contain width="50px" height="100px" :src="item.source" @click="toggle"> </v-img>
+        <v-slide-group
+          v-else
+          v-model="model"
+          class="pa-0"
+          center-active
+          show-arrows
+          mandatory
+        >
+          <v-slide-item
+            class="mx-0"
+            v-for="item in data"
+            :key="item.id"
+            v-slot="{ toggle }"
+          >
+            <v-img
+              contain
+              width="100px"
+              height="100px"
+              :src="item.source"
+              @click="toggle"
+            >
+            </v-img>
           </v-slide-item>
-        </v-slide-group> -->
+        </v-slide-group>
       </v-col>
-      <v-col justify="center" align="center" cols="2">
-        <v-btn class="text-capitalize" outlined small text tile
+      <v-col justify="center" align="center" cols="4">
+        <v-btn
+          class="text-capitalize"
+          outlined
+          :small="size != 'sm' && size != 'xs'"
+          :x-small="size == 'sm' || size == 'xs'"
+          text
+          tile
           >Send a gift</v-btn
         >
       </v-col>
@@ -62,6 +81,11 @@ export default {
       },
     ],
   }),
+  computed: {
+    size() {
+      return this.$vuetify.breakpoint.name;
+    },
+  },
 };
 </script>
 
@@ -70,5 +94,6 @@ export default {
   font-size: 0.8em;
   font-weight: 500;
   text-align: left;
+  margin-bottom: 2%;
 }
 </style>

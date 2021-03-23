@@ -1,25 +1,19 @@
 <template>
-  <div class="Content">
+  <div class="Content mb-10">
     <h1 class="title mb-10">Welcome to Gemnote, Ashley!</h1>
     <v-row class="mb-8" align="center" justify="center">
       <v-col align="center" justify="center" cols="12" sm="6">
-        <v-card
-          class="cardAverage pa-5"
-          tile
-          outlined
-          width="100%"
-          height="17vh"
-        >
+        <v-card class="cardAverage" tile outlined width="100%" height="19vh">
           <Averages />
         </v-card>
       </v-col>
       <v-col align="center" justify="center" cols="12" sm="6">
         <v-card
-          class="cardAverage pa-3 flex"
+          class="cardAverage flex"
           tile
           outlined
           width="100%"
-          height="17vh"
+          height="19vh"
         >
           <Inventory />
         </v-card>
@@ -27,7 +21,7 @@
     </v-row>
     <v-row class="mb-10" align="center" justify="center">
       <v-card
-        class="cardAverage pa-5"
+        class="cardAverage"
         align="center"
         justify="center"
         tile
@@ -39,13 +33,14 @@
     </v-row>
     <v-row align="center" justify="center">
       <v-card
+        class="cardAverage"
         align="center"
         justify="center"
         tile
         outlined
         width="97%"
       >
-        <Graphic />
+        <Gifts />
       </v-card>
     </v-row>
   </div>
@@ -55,14 +50,14 @@
 import Averages from "./AverageNumbers";
 import Inventory from "./Inventory";
 import Trending from "./Trending";
-import Graphic from './Graphic'
+import Gifts from ".//Gifts";
 export default {
-  name: "content",
+  name: "contentComponent",
   components: {
     Averages,
     Inventory,
     Trending,
-    Graphic
+    Gifts,
   },
 };
 </script>
@@ -79,5 +74,16 @@ export default {
 .cardAverage {
   justify-content: center;
   align-items: center;
+  padding: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+@media only screen and (max-width: 768px) {
+  .cardAverage {
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+  }
 }
 </style>

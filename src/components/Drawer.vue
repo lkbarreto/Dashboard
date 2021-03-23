@@ -8,7 +8,7 @@
     >
       <v-img class="mb-15" contain src="../assets/logoTest.png"></v-img>
       <div class="mb-8">
-        <span class="name">Asheley won</span>
+        <span class="name">Lourdes Barreto</span>
       </div>
 
       <v-divider class="mb-4 white" />
@@ -20,7 +20,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar v-if="size !== 'lg' && size !== 'xl'" class="transparent" elevation="0" tile app>
+    <v-app-bar v-if="size !== 'lg' && size !== 'xl'" class="transparent" elevation="0" tile>
       <v-app-bar-nav-icon
         color="black"
         @click="drawer = !drawer"
