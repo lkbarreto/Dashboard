@@ -20,7 +20,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar v-if="size !== 'lg'" class="transparent" elevation="0" tile app>
+    <v-app-bar v-if="size !== 'lg' && size !== 'xl'" class="transparent" elevation="0" tile app>
       <v-app-bar-nav-icon
         color="black"
         @click="drawer = !drawer"
