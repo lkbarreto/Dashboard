@@ -1,19 +1,19 @@
 <template>
   <div class="averages pl-4">
-    <v-row justify="center" class="rowAve pt-2" align="center">
-      <v-col cols="6">
-        <div class="subtitle">Total number of orders this month</div>
+    <v-row class="rowAve" >
+      <v-col cols="5">
+        <div class="subtitle mb-3">Total number of orders this month</div>
         <div class="number">2,366</div>
       </v-col>
 
-      <v-col cols="6">
-        <div class="subtitle">Average number of shipments/month</div>
+      <v-col cols="7">
+        <div class="subtitle mb-3">Average number of shipments/month</div>
         <div class="flexRow">
           <div class="number">364</div>
           <v-btn
             class="text-capitalize"
             outlined
-            :small="size != 'sm' && size != 'xs'"
+            color="black"
             :x-small="size == 'sm' || size == 'xs'"
             text
             tile
@@ -51,7 +51,7 @@ export default {
 .subtitle {
   font-size: 0.8em;
   font-weight: 500;
-  margin-bottom: 1.2vh;
+  margin-bottom: 12px;
   text-align: left;
 }
 
@@ -60,7 +60,13 @@ export default {
     font-size: 0.5em;
     font-weight: 400;
     margin-bottom: 1vh;
-    text-align: justify;
+    text-align: left;
+
+     text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
   }
 }
 

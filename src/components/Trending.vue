@@ -1,7 +1,7 @@
 <template>
   <div class="Trending">
     <div class="subtitle">Trending gifts in your store</div>
-    <v-row no-gutters justify="center" class="rowInventory" align="center">
+    <v-row no-gutters class="rowTrending" align="center">
       <v-col justify="center" align="center" cols="8">
         <v-row v-if="!size == 'sm' || !size == 'xs'">
           <v-col v-for="item in data" :key="item.id" cols="3">
@@ -39,9 +39,8 @@
       </v-col>
       <v-col justify="center" align="center" cols="4">
         <v-btn
-          class="text-capitalize"
+          class="text-capitalize float-right"
           outlined
-          :small="size != 'sm' && size != 'xs'"
           :x-small="size == 'sm' || size == 'xs'"
           text
           tile

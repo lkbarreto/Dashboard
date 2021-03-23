@@ -1,9 +1,9 @@
 <template>
   <div class="Content mb-10">
-    <h1 class="title mb-10">Welcome to Gemnote, Ashley!</h1>
+    <h1 class="title">Welcome to Gemnote, Lourdes!</h1>
     <v-row class="mb-8" align="center" justify="center">
       <v-col align="center" justify="center" cols="12" sm="6">
-        <v-card class="cardAverage" tile outlined width="100%" height="19vh">
+        <v-card class="cardAverage" tile outlined width="100%" height="20vh">
           <Averages />
         </v-card>
       </v-col>
@@ -13,7 +13,7 @@
           tile
           outlined
           width="100%"
-          height="19vh"
+          height="20vh"
         >
           <Inventory />
         </v-card>
@@ -69,6 +69,7 @@ export default {
   line-height: 2rem;
   letter-spacing: 0.0125em !important;
   font-family: "Roboto", sans-serif !important;
+  margin-bottom: 5vh;
 }
 
 .cardAverage {
@@ -83,7 +84,15 @@ export default {
   .cardAverage {
     justify-content: center;
     align-items: center;
-    padding: 4%;
+    padding: 3%;
   }
+  .v-application .title {
+  font-size: 1.6rem !important;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.0125em !important;
+  font-family: "Roboto", sans-serif !important;
+  margin-bottom: 3vh;
+}
 }
 </style>

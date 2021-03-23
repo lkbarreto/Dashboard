@@ -13,12 +13,11 @@
       </v-col>
       <v-col justify="center" align="center" cols="8">
         <div class="flexCol ml-3">
-          <div class="subtitle">Current Inventory</div>
+          <div class="subtitle mb-4">Current Inventory</div>
           <div class="flexRow">
             <div class="number">400</div>
             <v-btn
               class="text-capitalize"
-              :small="size != 'sm' && size != 'xs'"
               :x-small="size == 'sm' || size == 'xs'"
               outlined
               text

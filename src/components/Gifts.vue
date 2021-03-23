@@ -5,7 +5,6 @@
       <v-btn
         class="text-capitalize"
         outlined
-        :small="size != 'sm' && size != 'xs'"
         :x-small="size == 'sm' || size == 'xs'"
         text
         tile
