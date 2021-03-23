@@ -25,8 +25,6 @@
         color="black"
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
-
-      <v-toolbar-title>{{ size }}</v-toolbar-title>
     </v-app-bar>
   </div>
 </template>
